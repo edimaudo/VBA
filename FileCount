@@ -1,5 +1,5 @@
-'Counts number of files in a folder
-Function CountFilesInFolder(folderpath As String) As Integer
+'Counts number of Excel files in a folder
+Function CountFilesInFolder(byval folderpath As String) As Integer
     Dim path As String
     Dim count As Integer
     Dim filename As String
