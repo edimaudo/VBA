@@ -1,5 +1,5 @@
 'Checks if an excel workbook is open
-Function IsWorkBookOpen(filename As String)
+Function IsWorkBookOpen(ByVal filename As String)
     Dim ff As Long, ErrNo As Long
 
     On Error Resume Next
