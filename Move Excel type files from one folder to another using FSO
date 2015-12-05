@@ -1,4 +1,4 @@
-Sub MoveFiles(FromDir As String, ToDir As String)
+Sub MoveExcelFile(byVal FromDir As String, byVal ToDir As String)
 On Error GoTo ErrorHandler:
 
     Dim FSO As Object
