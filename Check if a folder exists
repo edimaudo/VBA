@@ -1,5 +1,5 @@
 'function to check if a folder exists
-Public Function FileFolderExists(strFullPath As String) As Boolean
+Public Function FileFolderExists(byVal strFullPath As String) As Boolean
 On Error GoTo ErrorHandler:
     If Not Dir(strFullPath, vbDirectory) = vbNullString Then
         FileFolderExists = True
