@@ -1,4 +1,5 @@
 'Checks if an excel workbook is open
+'filename should include filepath as well
 Function IsWorkBookOpen(ByVal filename As String)
     Dim ff As Long, ErrNo As Long
 
