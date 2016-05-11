@@ -1,3 +1,4 @@
+'Works for MS Access
 Sub StatusBar(ByVal tablename As String)
     Dim db As Database
     Dim rs As Recordset
