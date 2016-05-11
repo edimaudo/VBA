@@ -6,6 +6,6 @@ On Error GoTo ErrorHandler
 Exit Sub
 ErrorHandler:
     MsgBox Err.Description
-    Call log(Err.Description)
+    'Call log(Err.Description)
     End
 End Sub
