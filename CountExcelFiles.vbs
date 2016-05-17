@@ -6,7 +6,7 @@ Function CountFilesInFolder(byval folderpath As String) As Integer
     path = folderpath & "*.xl*"
     filename = Dir(path)
     count = 0
-    Do While filename <> ""
+    Do While filename <> "" 'While filename <> vbnullString
         count = count + 1
         filename = Dir()
     Loop
