@@ -1,5 +1,5 @@
 Sub LoginConnection()
-On Error GoTo ErrorHandler:
+On Error GoTo ErrorHandler
     Dim db As Database
     Dim ws As Workspace
    
