@@ -28,6 +28,6 @@ MsgBox "Column F updated"
 
 Exit Sub
 ErrorHandler:
-MsgBox "An error occured in the subrountime"
+MsgBox "An error occured in the subrountine"
 
 End Sub
