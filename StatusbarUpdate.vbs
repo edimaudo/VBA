@@ -1,5 +1,9 @@
+Option Compare Database
+Option Explicit
+
 'Works for MS Access
 Sub StatusBar(ByVal tablename As String)
+    On Error GoTo ErrorHandler
     Dim db As Database
     Dim rs As Recordset
     Dim rscounter As Long
@@ -19,4 +23,8 @@ Sub StatusBar(ByVal tablename As String)
 
 Set db = Nothing
 Set rs = Nothing
+Exit sub
+ErrorHandler:
+	msgbox "An error occured"
+		end
 End Sub
