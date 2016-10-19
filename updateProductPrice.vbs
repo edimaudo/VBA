@@ -13,7 +13,7 @@ Dim startValue As Long
 Set worksheet1 = ThisWorkbook.Sheets(1)
 Set worksheet2 = ThisWorkbook.Sheets(2)
 rowCounter = 2
-rowLength = Cells(Rows.Count, "A").End(xlUp).Row
+            rowLength = worksheet1.Cells(Rows.Count, "A").End(xlUp).Row
 rowInput = 2
 
 For startValue = rowInput To rowLength
