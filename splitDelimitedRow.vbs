@@ -43,6 +43,8 @@ Next
 
 Set ws = Nothing
 
+Application.ScreenUpdating = True
+
 Exit Sub
 errorHandler:
     MsgBox "An error occured while processing the data"
