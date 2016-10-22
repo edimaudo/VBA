@@ -14,17 +14,13 @@ On Error GoTo ErrorHandler
     Application.ScreenUpdating = False
     Set pasteSheet = ThisWorkbook.Worksheets("Append all tabs")
     For Each currentSheet In ThisWorkbook.Worksheets
-        If Not currentSheet.Name = "All" And Not currentSheet.Name = "Sheet2" And _
-        Not currentSheet.Name = "Append all tabs" And Not currentSheet.Name = "Append all tabs" Then
             currentSheetRowCount = currentSheet.Cells(Rows.Count, "B").End(xlUp).Row
             If currentSheetRowCount > 2 Then
                 currentSheet.Range("A2:K" & CStr(currentSheetRowCount)).Copy
                 pasteSheet.Range("A" & CStr(pasteRowCount) & ":K" & CStr(pasteRowCount + currentSheetRowCount)).PasteSpecial
                 Application.CutCopyMode = False
             End If
-            pasteRowCount = pasteSheet.Cells(Rows.Count, "B").End(xlUp).Row + 1
-        End If
-        
+            pasteRowCount = pasteSheet.Cells(Rows.Count, "B").End(xlUp).Row + 1      
     Next currentSheet
     
     Set currentSheet = Nothing
