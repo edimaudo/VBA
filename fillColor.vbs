@@ -1,6 +1,4 @@
 Sub GetRGBColor_Fill()
-'PURPOSE: Output the RGB color code for the ActiveCell's Fill Color
-'SOURCE: www.TheSpreadsheetGuru.com
 
 Dim HEXcolor As String
 Dim RGBcolor As String
