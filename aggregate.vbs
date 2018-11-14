@@ -1,7 +1,4 @@
-	Edima Udo <edimaudo@gmail.com>
-VBA code
-Udo, Edima <EDIMA_UDO@homedepot.com>	Tue, Nov 13, 2018 at 2:18 PM
-To: "edimaudo@gmail.com" <edimaudo@gmail.com>
+
  
 
 Option Explicit
